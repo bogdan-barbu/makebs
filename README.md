@@ -48,7 +48,7 @@ The following examples show *MakeBS* in action.
 ##### makefile
 
     FOO_DIR ::= foo
-    FOO_OBJ_FILES ::= foo.o
+    FOO_OBJ_FILES ::= $(FOO_DIR)/foo.o
     FOO_BIN_FILE ::= $(FOO_DIR)/foo
     foo_LINK ::= mylib1
 
@@ -56,7 +56,7 @@ The following examples show *MakeBS* in action.
     C_BIN_FILES ::= $(FOO_BIN_FILE)
 
     BAR_DIR ::= bar
-    BAR_OBJ_FILES ::= bar.o
+    BAR_OBJ_FILES ::= $(BAR_DIR)/bar.o
     BAR_BIN_FILE ::= $(BAR_DIR)/bar
     bar_LINK ::= mylib2
 
